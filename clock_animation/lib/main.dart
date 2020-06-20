@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
 
     animationController = AnimationController(
       vsync: this, 
-      duration: Duration(seconds: 5)
+      duration: Duration(seconds: 1)
     );
     
     animationController.addListener(() { 
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                 ),
 
                 Transform(
-                    alignment: FractionalOffset(0.5, 0.0),
+                    alignment: FractionalOffset(0.5, 0.1),
                     transform: Matrix4.rotationZ(animation.value),
 
                     child: Container(                  
